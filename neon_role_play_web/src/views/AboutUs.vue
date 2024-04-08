@@ -1,9 +1,9 @@
 <template>
-  <PepeDance />
-  <NavBar />
+  <PepeDance/>
+  <NavBar/>
 </template>
-  
+
 <script lang="ts" setup>
-  import PepeDance from "@/components/pepeDance.vue";
-  import NavBar from "@/components/NavBar.vue";
+import PepeDance from "@/components/pepeDance.vue";
+import NavBar from "@/components/NavBar.vue";
 </script>

@@ -1,68 +1,56 @@
 <template>
-    <!-- Navbar -->
-    <v-app-bar :elevation="2" app>
-      <v-container class="d-flex align-content-center">
-        <v-row>
-          <v-col cols="5">
-            <router-link to="/" class="textLink">
-             Home
+  <!-- Navbar -->
+  <v-app-bar
+      app
+      :elevation="10"
+      color="primary"
+      density="comfortable"
+      scroll-behavior="fade-image"
+      scroll-threshold="50"
+      :image=NeonImage
+      class="d-flex align-center"
+      height="100"
+
+  >
+    <v-container>
+      <v-row no-gutters>
+        <v-col>
+          <!-- Icon on the left -->
+          <v-app-bar-nav-icon
+          >Neon
+          </v-app-bar-nav-icon>
+        <!-- Navigation Links -->
+          <v-btn>
+            <router-link
+                to="/"
+                class="textLink"
+            >Neon Roleplay
             </router-link>
-          </v-col>
-          <v-col cols="5">
-            <router-link to="/about-us" class="textLink">
-             About-us
+          </v-btn>
+        <!-- Navigation Links -->
+          <v-btn>
+            <router-link
+                to="/about-us"
+                class="textLink"
+            >About Us
             </router-link>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-app-bar>
-    <!-- END navbar -->
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-app-bar>
+  <!-- END navbar -->
 </template>
 
-
-<script setup>
-
+<script lang="ts" setup>
+import NeonImage from '@/assets/ai_generated/neon_city_generated_ai.webp';
+import Logo from '@/assets/logo.png';
 </script>
 
 
-
 <style scoped>
-.webName {
-
-font-family: 'Pretendard regular';
-font-size: 20px;
-}
-a{
-text-decoration:none;
-color: black;
-}
-.textLink{
-text-decoration: none;
-font-family: Pretendard std;
-font-family: 'Pretendard light';
-font-size: 16px;
-cursor: pointer;
-position: relative;
-margin: 100% auto;
-width: max-content;
-}
-.textLink::after{
-content: "";
-position: absolute;
-bottom: -5px;
-height: 1px;
-width: 100%;
-left: 0;
-background-color: black;
-transition: 0.3s;
-transition-timing-function: ease-in-out;
-transform: scaleX(0);
-}
-.textLink:hover::after{
-transform: scaleX(1);
-}
-
-.favorite{
-padding-top: 1em;
+.textLink {
+  text-decoration: none;
+  color: inherit; /* This ensures the link color matches the button text color */
 }
 </style>
