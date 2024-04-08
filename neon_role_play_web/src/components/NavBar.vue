@@ -3,12 +3,12 @@
     <v-app-bar :elevation="2" app>
       <v-container class="d-flex align-content-center">
         <v-row>
-          <v-col cols="6">
+          <v-col cols="5">
             <router-link to="/" class="textLink">
              Home
             </router-link>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="5">
             <router-link to="/about-us" class="textLink">
              About-us
             </router-link>
@@ -27,16 +27,8 @@
 
 
 <style scoped>
-@font-face {
-font-family: 'Pretendard regular';
-src: url('../fonts/PretendardStd-Regular.woff') format('truetype');
-}
-@font-face {
-font-family: 'Pretendard light';
-src: url('../fonts/PretendardStd-Light.woff') format('truetype');
-}
-
 .webName {
+
 font-family: 'Pretendard regular';
 font-size: 20px;
 }
