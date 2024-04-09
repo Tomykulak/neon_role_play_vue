@@ -9,7 +9,7 @@
 
       <div class="py-14" />
 
-      <v-row class="d-flex align-center justify-center">
+      <v-row class=" ">
         <v-col cols="auto">
           <v-btn
             href="https://vuetifyjs.com/components/all/"

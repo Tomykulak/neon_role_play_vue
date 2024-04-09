@@ -1,6 +1,6 @@
 <template>
   <!-- Navbar -->
-  <v-app-bar app color="primary">
+  <v-app-bar app color="primary pa-1">
     <v-responsive class="d-flex align-center text-center fill-height">
       <v-row>
         <v-col cols="auto">
