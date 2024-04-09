@@ -18,9 +18,7 @@
           icon
           color="black"
         >
-          <v-icon size="24px">
-            {{ icon }}
-          </v-icon>
+          <v-icon size="24px">{{ icon }}</v-icon>
         </v-btn>
       </v-card-text>
 
@@ -35,22 +33,20 @@
       </v-card-text>
     </v-card>
   </v-footer>
-
 </template>
 
 <script>
-
+import {mdiBookOpenPageVariantOutline, mdiFacebook, mdiTwitter} from "@mdi/js";
+// https://pictogrammers.com/library/mdi/
 export default {
-  data: () => ({
-    icons: [
-      'mdi-facebook',
-      'mdi-twitter',
-      'mdi-linkedin',
-      'mdi-instagram',
-    ],
-  }),
-}
+  data() {
+    return {
+      icons: [mdiFacebook, mdiTwitter, mdiBookOpenPageVariantOutline]
+    };
+  }
+};
 </script>
-<style>
 
+<style>
+/* Add any custom styles here */
 </style>
