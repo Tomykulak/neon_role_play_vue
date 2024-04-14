@@ -14,6 +14,7 @@
 .neo-background-dark {
   background-image: linear-gradient(to right, #30073d, #a93cff);
 
+  /*background-image: url("@/assets/ai_generated/neon_city_generated_ai.webp");*/
   width: 100%;
   padding: 0;
   margin: 0;

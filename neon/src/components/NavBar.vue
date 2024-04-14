@@ -1,8 +1,8 @@
 <template>
   <!-- Navbar -->
-  <v-app-bar app color="primary pa-1">
+  <v-app-bar app color="primary">
     <v-responsive class="d-flex align-center text-center fill-height">
-      <v-row>
+      <v-row class=" ">
         <v-col cols="auto">
           <router-link
             to="/"
