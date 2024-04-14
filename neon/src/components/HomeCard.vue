@@ -14,7 +14,7 @@
       </v-row>
       <v-spacer class="my-5"/>
       <v-row class="mx-auto my-auto text-white">
-        <v-col cols="4">
+        <v-col cols="sm-5" class="">
           <div class="text-caption">
             Dive into a world where neon lights
             are not just part of the scenery,
@@ -29,7 +29,7 @@
       </v-row>
       <v-spacer class="my-5"/>
       <v-row class="mx-auto my-auto text-white">
-        <v-col cols="3" class="">
+        <v-col cols="sm-4" class="">
           <div class="text-caption">
             Signing up is easy!
             Click [Join Now] to start your adventure.
@@ -74,8 +74,8 @@
 
 @media (min-width: 1024px) {
   .text-h1.honk-home_header {
-    font-size: 9rem !important;
-    line-height: 9rem;
+    font-size: 12rem !important;
+    line-height: 12rem;
     letter-spacing: 0.03em !important;
   }
 }
