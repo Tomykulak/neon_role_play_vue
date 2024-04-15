@@ -1,77 +1,61 @@
 <template>
   <v-container class="fill-height">
-    <div class="loading-container" v-if="isLoading">
-      <Loading />
-      <v-btn
-        @click="onLoadingStopClick"
-      >Stop loading</v-btn>
-    </div>
-    <div v-else>
-      <v-responsive class="main_thumbnail d-flex align-center justify-center mx-auto my-auto pa-2">
-        <v-row class="mx-auto my-auto">
-          <v-col cols="auto" class="">
-            <div class="text-h1 honk-home_header">
-              Neon Roleplay
+    <v-responsive class="main_thumbnail d-flex align-center justify-center mx-auto my-auto pa-2">
+      <v-row class="mx-auto my-auto">
+        <v-col cols="auto" class="">
+          <div class="text-h1 honk-home_header">
+            Neon Roleplay
+          </div>
+          <v-spacer class="my-5"/>
+          <div class="text-h3 text-deep-purple-lighten-1">
+            We are GTA 5 private server
+          </div>
+        </v-col>
+      </v-row>
+      <v-spacer class="my-5"/>
+      <v-row class="mx-auto my-auto text-white">
+        <v-col cols="sm-5" class="">
+          <div class="text-caption">
+            Dive into a world where neon lights
+            are not just part of the scenery,
+            but a beacon calling to those brave
+            enough to live out their fantasies in a vast,
+            vibrant metropolis. Whether you're a seasoned
+            roleplayer or just starting out, Neon City
+            is your gateway to an immersive experience
+            like no other.
+          </div>
+        </v-col>
+      </v-row>
+      <v-spacer class="my-5"/>
+      <v-row class="mx-auto my-auto text-white">
+        <v-col cols="sm-4" class="">
+          <div class="text-caption">
+            Signing up is easy!
+            Click [Join Now] to start your adventure.
+            Connect, collaborate, and create lasting friendships.
+            Neon City is not just a place to play;
+            it's a place to belong.
+          </div>
+          <v-btn class="my-3" color="black">
+            <div class="">
+              Join us!
             </div>
-            <v-spacer class="my-5"/>
-            <div class="text-h3 text-deep-purple-lighten-1">
-              We are GTA 5 private server
+          </v-btn>
+          <v-btn class="my-3" color="black">
+            <div class="">
+              GET V.I.P
             </div>
-          </v-col>
-        </v-row>
-        <v-spacer class="my-5"/>
-        <v-row class="mx-auto my-auto text-white">
-          <v-col cols="sm-5" class="">
-            <div class="text-caption">
-              Dive into a world where neon lights
-              are not just part of the scenery,
-              but a beacon calling to those brave
-              enough to live out their fantasies in a vast,
-              vibrant metropolis. Whether you're a seasoned
-              roleplayer or just starting out, Neon City
-              is your gateway to an immersive experience
-              like no other.
-            </div>
-          </v-col>
-        </v-row>
-        <v-spacer class="my-5"/>
-        <v-row class="mx-auto my-auto text-white">
-          <v-col cols="sm-4" class="">
-            <div class="text-caption">
-              Signing up is easy!
-              Click [Join Now] to start your adventure.
-              Connect, collaborate, and create lasting friendships.
-              Neon City is not just a place to play;
-              it's a place to belong.
-            </div>
-            <v-btn class="my-3" color="black">
-              <div class="">
-                Join us!
-              </div>
-            </v-btn>
-            <v-btn class="my-3" color="black">
-              <div class="">
-                GET V.I.P
-              </div>
-            </v-btn>
-          </v-col>
-        </v-row>
-      </v-responsive>
-    </div>
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-responsive>
   </v-container>
 </template>
 
 
-<script setup>
-import {ref} from "vue";
-import Loading from "@/components/Loading.vue";
+<script setup lang="ts">
 
-const isLoading = ref(true); // Initialize isLoading as a reactive boolean reference
-
-const onLoadingStopClick = () => {
-  console.log('Loading button clicked');
-  isLoading.value = false;
-}
 </script>
 
 <style>

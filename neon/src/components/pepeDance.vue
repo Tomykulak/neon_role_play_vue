@@ -1,6 +1,14 @@
 <template>
-  <v-container class="fill-height bg-yellow">
-    <v-responsive class="d-flex justify-center align-center text-center fill-height ga-1">
+  <v-container class="fill-height">
+    <div class="loading-container d-flex align-center justify-center mx-auto my-auto pa-2" v-if="isLoading">
+      <Loading/>
+      <v-btn
+        color="primary"
+        @click="onLoadingStopClick"
+      >Stop loading
+      </v-btn>
+    </div>
+    <v-responsive v-else class="d-flex justify-center align-center text-center fill-height ga-1">
       <v-row class="bg-black ma-2 ">
         <!-- CARD 1-->
         <v-col cols="auto" class="bg-red">
@@ -34,9 +42,18 @@
     </v-responsive>
   </v-container>
 </template>
-<script>
+<script setup>
+import {ref} from "vue";
+import Loading from "@/components/Loading.vue";
 
-</script setup>
+const isLoading = ref(true); // Initialize isLoading as a reactive boolean reference
+
+const onLoadingStopClick = () => {
+  console.log('Loading button clicked');
+  isLoading.value = false;
+}
+</script>
+
 <style>
 .pepe_card {
   max-width: 200px;
