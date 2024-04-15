@@ -35,16 +35,12 @@
   </v-footer>
 </template>
 
-<script>
+<script setup>
 import {mdiBookOpenPageVariantOutline, mdiFacebook, mdiTwitter} from "@mdi/js";
 // https://pictogrammers.com/library/mdi/
-export default {
-  data() {
-    return {
-      icons: [mdiFacebook, mdiTwitter, mdiBookOpenPageVariantOutline]
-    };
-  }
-};
+
+const icons = [mdiFacebook, mdiTwitter, mdiBookOpenPageVariantOutline]
+
 </script>
 
 <style>

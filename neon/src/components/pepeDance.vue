@@ -36,7 +36,7 @@
 </template>
 <script>
 
-</script>
+</script setup>
 <style>
 .pepe_card {
   max-width: 200px;
